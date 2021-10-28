@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.default-table-container {
+  position: relative;
+  margin: 0 auto;
+  width: 700px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.default-table__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.update-btn {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.update-btn svg {
+  width: 100%;
+  height: 100%;
+  min-width: 20px;
+  min-height: 20px;
+}
+
+
+.default-table-container h2 {
+  padding: 0px 20px;
+}
+
+.default-table {
+  table-layout: fixed;
+}
+
+.default-table thead {
+  background: #f2f9fd;
+  width: 100%;
+}
+
+.default-table tbody tr:nth-child(2n) {
+  background: #fbfbfb;
+}
+
+.default-table tbody tr:hover {
+  background-color: #fffdc5;
+}
+
+.default-table tbody tr:hover .btn {
+  display: flex;
+}
+
+.default-table tr {
+  position: relative;
+}
+
+.default-table tr th,
+.default-table tr td {
+  font-size: 14px;
+  text-align: left;
+  padding: 10px;
+  vertical-align: top;
+}
+
+.default-table tr th:first-child,
+.default-table tr td:first-child {
+  padding-left: 20px;
+}
+
+.default-table tr th:last-child,
+.default-table tr td:last-child {
+  padding-right: 20px;
+}
+
+.btn {
+  width: 20px;
+  height: 20px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+.btn svg {
+  width: 100%;
+  height: 100%;
+  min-width: 14px;
+  min-height: 14px;
+}
+
+@media screen and (max-width:767px) {
+
+  .default-table-container h2 {
+    padding: 0px 10px;
+  }
+
+  .default-table tr th:first-child,
+  .default-table tr td:first-child {
+    padding-left: 10px;
+  }
+
+  .default-table tr th:last-child,
+  .default-table tr td:last-child {
+    padding-right: 10px;
+  }
+}
